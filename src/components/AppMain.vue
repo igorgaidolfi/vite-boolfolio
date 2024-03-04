@@ -1,9 +1,13 @@
 <script>
 import {store} from '../store.js' 
 import axios from 'axios'
+import ProjectCard from './ProjectCard.vue'
 
 export default {
     name: 'AppMain',
+    components: {
+        ProjectCard,
+    },
     data(){
         return{
             store,
@@ -17,6 +21,7 @@ export default {
         getProjects(){
             axios.get(`${this.store.apiUrl}/api/projects`).then((response) =>{
                 console.log(response.data.results)
+                this.project = response.data.results
             })
         }
     }
@@ -26,9 +31,7 @@ export default {
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    
-                </div>
+                <ProjectCard v-for="project, index in projects" :key="index" :project="project"/>
             </div>
         </div>
     </main>
