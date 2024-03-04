@@ -21,7 +21,7 @@ export default {
         getProjects(){
             axios.get(`${this.store.apiUrl}/api/projects`).then((response) =>{
                 console.log(response.data.results)
-                this.project = response.data.results
+                this.projects = response.data.results
             })
         }
     }
@@ -31,7 +31,7 @@ export default {
     <main>
         <div class="container">
             <div class="row">
-                <ProjectCard v-for="project, index in projects" :key="index" :project="project"/>
+                <ProjectCard v-for="(project, index) in this.projects" :key="index" :project="project"/>
             </div>
         </div>
     </main>
