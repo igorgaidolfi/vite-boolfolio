@@ -1,12 +1,11 @@
 <script>
 export default {
-    name: 'Home',
-    
+    name: 'AppNotFound',
 }
 </script>
 <template lang="">
     <div>
-        i'm home
+        <h1 class='text-center'>404 - Not Found</h1>
     </div>
 </template>
 <style lang="">
