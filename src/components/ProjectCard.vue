@@ -25,14 +25,16 @@ export default {
 </script>
 <template lang="">
         <div class="col-3">
-            <div class="card">
-                <img :src="getImg()" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h3>
-                        {{project.title}}
-                    </h3>
+            <router-link :to="{ name: 'single-project', params: {slug: project.slug} }">
+                <div class="card">
+                    <img :src="getImg()" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3>
+                            {{project.title}}
+                        </h3>
+                    </div>
                 </div>
-            </div>
+            </router-link>
         </div>
 </template>
 <style lang="">

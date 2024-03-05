@@ -31,3 +31,8 @@ Continuate a lavorare sulla stessa repo di venerdì. Implementate Vue Router nel
 Esercizio Base: Realizzare una homepage e la pagina con l'elenco dei progetti. Implementando vue router verificare che cliccando sulle voci di menù apposite, si atterri nella pagina corretta.
 BONUS:
 Gestire la pagina 404 per quelle rotte che non hanno una componente specifica associata
+
+DAY 8
+Continuate a lavorare sulla repo dei giorni scorsi e realizzate la pagina di dettaglio dei progetti. Dovete quindi creare una rotta apposita nel file router.js in cui passate il parametro e la relativa componente pagina. Create poi l'endpoint nel file api.php ed il metodo show nel controller.
+Bonus:
+Creare una pagina in cui mostrare le i progetti appartenenti ad una singola categoria.
