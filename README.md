@@ -36,3 +36,8 @@ DAY 8
 Continuate a lavorare sulla repo dei giorni scorsi e realizzate la pagina di dettaglio dei progetti. Dovete quindi creare una rotta apposita nel file router.js in cui passate il parametro e la relativa componente pagina. Create poi l'endpoint nel file api.php ed il metodo show nel controller.
 Bonus:
 Creare una pagina in cui mostrare le i progetti appartenenti ad una singola categoria.
+
+DAY 9
+Ciao a tutti, oggi continuate con l'esercizio Boolfolio implementando una form per inviare una mail. Seguite i passaggi visti a lezione.
+Bonus: gestite gli errori ed i relativi messaggi se l'utente sbaglia ad inserire valori nei campi
+SUPER BONUS: creare una Thank You page alla quale essere reindirizzati se la mail viene inviata con successo.
